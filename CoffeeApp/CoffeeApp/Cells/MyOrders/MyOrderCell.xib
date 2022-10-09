@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="VOG-bP-mbs" customClass="MyOrderCell" customModule="CoffeeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VOG-bP-mbs" id="FjW-Es-8RS">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="orderLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npH-hd-JrA">
+                        <rect key="frame" x="10" y="10" width="180" height="63"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="statusLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyo-PV-WDq">
+                        <rect key="frame" x="250" y="23" width="137" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vBc-4b-N8G">
+                        <rect key="frame" x="301" y="51" width="35.666666666666686" height="21.666666666666671"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1j-8J-gdy">
+                                <rect key="frame" x="0.0" y="0.0" width="9.3333333333333339" height="21.666666666666668"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" red="0.2941176593" green="0.2901961207" blue="0.46274507050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xM-cq-cwf">
+                                <rect key="frame" x="9.3333333333333126" y="0.0" width="26.333333333333329" height="21.666666666666668"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" red="0.2941176593" green="0.2901961207" blue="0.46274507050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Oyo-PV-WDq" secondAttribute="trailing" constant="3" id="1uu-ph-3Ik"/>
+                    <constraint firstItem="vBc-4b-N8G" firstAttribute="top" secondItem="Oyo-PV-WDq" secondAttribute="bottom" constant="7.6699999999999999" id="AHR-z0-cnG"/>
+                    <constraint firstItem="Oyo-PV-WDq" firstAttribute="leading" secondItem="npH-hd-JrA" secondAttribute="trailing" constant="60" id="Aqb-EE-gt0"/>
+                    <constraint firstItem="npH-hd-JrA" firstAttribute="leading" secondItem="FjW-Es-8RS" secondAttribute="leading" constant="10" id="Dbh-hY-z4u"/>
+                    <constraint firstAttribute="bottom" secondItem="npH-hd-JrA" secondAttribute="bottom" constant="20" id="Gso-xD-VGP"/>
+                    <constraint firstItem="Oyo-PV-WDq" firstAttribute="top" secondItem="FjW-Es-8RS" secondAttribute="top" constant="23" id="K3x-tY-8Uz"/>
+                    <constraint firstItem="npH-hd-JrA" firstAttribute="top" secondItem="FjW-Es-8RS" secondAttribute="top" constant="10" id="Sme-hd-AZu"/>
+                    <constraint firstAttribute="bottom" secondItem="vBc-4b-N8G" secondAttribute="bottom" constant="20.329999999999998" id="UXA-v5-8aP"/>
+                    <constraint firstAttribute="trailing" secondItem="npH-hd-JrA" secondAttribute="trailing" constant="200" id="j0t-DF-eWx"/>
+                    <constraint firstItem="vBc-4b-N8G" firstAttribute="leading" secondItem="npH-hd-JrA" secondAttribute="trailing" constant="111" id="puV-XS-Kce"/>
+                    <constraint firstAttribute="trailing" secondItem="vBc-4b-N8G" secondAttribute="trailing" constant="53.329999999999998" id="sa5-4c-1x2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="orderLabel" destination="npH-hd-JrA" id="3HL-qB-56h"/>
+                <outlet property="priceLabel" destination="5xM-cq-cwf" id="vGK-3w-Gtt"/>
+                <outlet property="statusLabel" destination="Oyo-PV-WDq" id="YNp-ic-Bo9"/>
+            </connections>
+            <point key="canvasLocation" x="207.69230769230768" y="47.274881516587676"/>
+        </tableViewCell>
+    </objects>
+</document>
